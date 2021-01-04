@@ -6,3 +6,4 @@ Check current element.
 
 --Connected to SSH server
 --Another check status
+--Config GitHub app
