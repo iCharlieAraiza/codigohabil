@@ -1,2 +1,2 @@
 # Codigohabil
-Main respository of Codigohabil front-end development.
+Main respository of CodigoHabil front-end development.
