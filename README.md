@@ -1,2 +1,5 @@
-# codigohabil
-Updated status for checking status. current
+# Codigohabil
+Main respository of CodigoHabil front-end development.
+
+# Status checked
+Check current element.
