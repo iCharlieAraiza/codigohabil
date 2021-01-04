@@ -1,0 +1,50 @@
+body{
+    background-color: aqua;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  background-color: aquamarine;
+}
+
+.logo{
+  width: 200pxs;
+}
+
+.side-button{
+
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  svg{
+    color: rgb(44, 62, 80);
+    width: 25px;
+  }
+}
+
+.sidebar{
+  top: 0;
+  position: fixed;
+  width: 15rem;
+  height: 100%;
+  background-color: #e0e0e0;
+  left: -14rem;
+  nav{
+    margin-top: 4rem;
+  }
+}
+
+.top-section{
+  h2,p{
+    text-align: center;
+  }
+  p{
+    margin: 10px;
+  }
+
+}

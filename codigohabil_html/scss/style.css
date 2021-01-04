@@ -1,0 +1,58 @@
+body {
+  background-color: aqua;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  background-color: aquamarine;
+}
+
+.logo {
+  width: 200pxs;
+}
+
+.side-button {
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.side-button svg {
+  color: #2c3e50;
+  width: 25px;
+}
+
+.sidebar {
+  top: 0;
+  position: fixed;
+  width: 15rem;
+  height: 100%;
+  background-color: #e0e0e0;
+  left: -14rem;
+}
+
+.sidebar nav {
+  margin-top: 4rem;
+}
+
+.top-section h2, .top-section p {
+  text-align: center;
+}
+
+.top-section p {
+  margin: 10px;
+}
+/*# sourceMappingURL=style.css.map */
