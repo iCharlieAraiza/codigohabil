@@ -1,5 +1,5 @@
-body {
-  background-color: aqua;
+* {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 header {
@@ -11,11 +11,11 @@ header {
           justify-content: space-between;
   position: relative;
   z-index: 1;
-  background-color: aquamarine;
 }
 
 .logo {
-  width: 200pxs;
+  width: 180px;
+  padding: 5px 0;
 }
 
 .side-button {
@@ -31,8 +31,8 @@ header {
 }
 
 .side-button svg {
-  color: #2c3e50;
-  width: 25px;
+  color: #f3f3f3;
+  width: 22px;
 }
 
 .sidebar {
@@ -48,11 +48,76 @@ header {
   margin-top: 4rem;
 }
 
+.sidebar ul {
+  list-style: none;
+  position: fixed;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #454545;
+}
+
+.sidebar a.active {
+  font-weight: bold;
+}
+
+.top-section {
+  background-image: url("/img/background-header.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  max-height: 850px;
+  position: relative;
+  width: 100%;
+}
+
 .top-section h2, .top-section p {
   text-align: center;
 }
 
 .top-section p {
   margin: 10px;
+}
+
+.top-section h2 {
+  font-weight: bold;
+  letter-spacing: -1px;
+  font-size: 32px;
+}
+
+.top-section p {
+  font-size: 20px;
+  margin: 5px 1rem;
+}
+
+.logo-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login-top {
+  background-color: transparent;
+  border: none;
+}
+
+.site-description {
+  color: #F2F2F2;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+#homepage header {
+  background-color: #7D9091;
 }
 /*# sourceMappingURL=style.css.map */

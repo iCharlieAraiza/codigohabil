@@ -1,17 +1,18 @@
-body{
-    background-color: aqua;
+*{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 }
+
 
 header{
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1;
-  background-color: aquamarine;
 }
 
 .logo{
-  width: 200pxs;
+  width: 180px;
+  padding: 5px 0;
 }
 
 .side-button{
@@ -22,8 +23,8 @@ header{
   justify-content: space-around;
 
   svg{
-    color: rgb(44, 62, 80);
-    width: 25px;
+    color: #f3f3f3;
+    width: 22px;
   }
 }
 
@@ -37,9 +38,33 @@ header{
   nav{
     margin-top: 4rem;
   }
+  ul{
+    list-style: none;
+    position: fixed;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+  a{
+    text-decoration: none;
+    color: #454545;
+    &.active{
+      font-weight: bold;
+    }
+  }
+
 }
 
 .top-section{
+
+  background-image: url("/img/background-header.png");
+  background-size: cover;
+  background-position: center; 
+  height: 100vh;
+  max-height: 850px;
+  position: relative;
+  width: 100%;
+  
   h2,p{
     text-align: center;
   }
@@ -47,4 +72,40 @@ header{
     margin: 10px;
   }
 
+  h2{
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-size: 32px;
+  }
+  p{
+    font-size: 20px;
+    margin: 5px 1rem;
+  }
+
 }
+
+.logo-link{
+  display: flex;
+  align-items: center;
+}
+
+.login-top{
+  background-color: transparent;
+  border: none;
+}
+
+.site-description{
+  color: #F2F2F2;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  right: 0;
+}
+
+
+#homepage{
+  header{
+    background-color: #7D9091;
+  }
+}
+
