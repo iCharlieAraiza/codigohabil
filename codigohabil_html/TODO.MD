@@ -1,5 +1,13 @@
 ## Current Work
 
+### General
+- [ ] Build CSS architecture  
+
+
+### Homepage 
 - [X] Finish homepage 
-- [ ] Build Responsive
-- [ ]  Add javascript funcionality
+- [X] Build Responsive
+- [X]  Add javascript funcionality
+
+## Post
+- [ ] Buld postpage

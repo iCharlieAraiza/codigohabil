@@ -294,6 +294,7 @@ footer ul li a:hover {
   font-size: 14px;
   font-weight: 500;
   color: #6d6d6d;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
