@@ -3,7 +3,11 @@ a {
 }
 
 * {
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+p, h1, h2, h3, h4 {
+  color: #464646;
 }
 
 header {
@@ -116,11 +120,14 @@ header {
 }
 
 .site-description {
-  color: #F2F2F2;
   position: absolute;
   top: 20%;
   left: 0;
   right: 0;
+}
+
+.site-description h2, .site-description p {
+  color: #F2F2F2;
 }
 
 #homepage header {
@@ -228,6 +235,7 @@ footer ul {
   list-style: none;
   width: 100%;
   padding: 0;
+  padding-left: 2rem;
   margin: 0;
 }
 
@@ -237,6 +245,39 @@ footer ul li {
 
 footer ul li a {
   text-align: center;
+  font-weight: 500;
+  color: #464646;
+  border-bottom: 2px dotted gray;
+  padding-bottom: 4px;
+}
+
+footer ul li a:hover {
+  border-bottom: 3px solid gray;
+}
+
+.copyright-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6d6d6d;
+}
+
+@media (min-width: 768px) {
+  .logo-link {
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  footer ul {
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 @media (min-width: 992px) {
@@ -244,7 +285,7 @@ footer ul li a {
     font-size: 38px;
   }
   .card-container {
-    max-width: 1090px;
+    max-width: 1070px;
     margin: 4rem auto !important;
   }
   .card-container .card {

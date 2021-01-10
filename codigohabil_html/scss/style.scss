@@ -1,7 +1,16 @@
 $h-base-color: #454545;
 $background-color: #7D9091;
 
+$grey-color: #464646;
+
+$link-post-color: #9D8529;
+
+
+$font-color: #464646;
+
+
 $h1-sm-s: 26px;
+
 
 a{
   text-decoration: none;
@@ -9,7 +18,11 @@ a{
 
 
 *{
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+p,h1,h2,h3,h4{
+  color: $font-color;
 }
 
 
@@ -111,7 +124,9 @@ header{
 }
 
 .site-description{
-  color: #F2F2F2;
+  h2,p{
+    color: #F2F2F2;
+  }
   position: absolute;
   top: 20%;
   left: 0;
@@ -212,21 +227,53 @@ footer{
     list-style: none;
     width: 100%;
     padding: 0;
+    padding-left: 2rem;
     margin: 0;
     li{
       margin: 1rem 1rem;
       a{
         text-align: center;
+        font-weight: 500;
+        color: $grey-color;
+        border-bottom: 2px dotted gray;
+        padding-bottom: 4px;
+        &:hover{
+          border-bottom: 3px solid gray;
+        }
       }
     }
   }
+}
+
+.copyright-footer{
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6d6d6d
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {  }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+
+  .logo-link{
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+
+  footer{
+    ul{
+      padding: 0;
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+ }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  
@@ -239,7 +286,7 @@ footer{
 
 
   .card-container{
-    max-width: 1090px;
+    max-width: 1070px;
     margin: 4rem auto !important;
     
     .card{
