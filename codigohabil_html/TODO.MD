@@ -1,5 +1,5 @@
 ## Current Work
 
-- [ ] Finish homepage
+- [X] Finish homepage 
 - [ ] Build Responsive
 - [ ]  Add javascript funcionality
