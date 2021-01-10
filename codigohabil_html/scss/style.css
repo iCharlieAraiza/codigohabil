@@ -10,6 +10,11 @@ p, h1, h2, h3, h4 {
   color: #464646;
 }
 
+.btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -25,6 +30,10 @@ header {
 .logo {
   width: 180px;
   padding: 5px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .side-button {
@@ -50,8 +59,14 @@ header {
   width: 15rem;
   height: 100%;
   background-color: #e0e0e0;
-  left: -14rem;
+  left: -15rem;
   z-index: 2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.sidebar.open {
+  left: 0px;
 }
 
 .sidebar nav {
@@ -114,9 +129,26 @@ header {
           align-items: center;
 }
 
-.login-top {
-  background-color: transparent;
-  border: none;
+.login-top ul {
+  display: none;
+  list-style: none;
+}
+
+.login-top li {
+  margin-right: 1rem;
+}
+
+.login-top a {
+  color: #f1f1f1;
+  font-size: 14px;
+}
+
+.login-top .login {
+  border: 1px solid #fff;
+}
+
+.login-top .login:hover {
+  background-color: #e0e0e0;
 }
 
 .site-description {
@@ -203,7 +235,8 @@ header {
 
 .card-container .card:hover {
   background-color: #f1f1f1;
-  margin-top: 8px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .card-container .card .logo-card {
@@ -268,6 +301,17 @@ footer ul li a:hover {
     margin-right: auto;
     margin-left: 1rem;
   }
+  .login-top ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .side-button {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
   footer ul {
     padding: 0;
     max-width: 600px;
@@ -281,6 +325,9 @@ footer ul li a:hover {
 }
 
 @media (min-width: 992px) {
+  header {
+    padding: 5px 0px;
+  }
   .top-section h2 {
     font-size: 38px;
   }

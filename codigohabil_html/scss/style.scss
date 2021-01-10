@@ -13,6 +13,11 @@ p,h1,h2,h3,h4{
   color: $font-color;
 }
 
+.btn{
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
 
 header{
   display: flex;
@@ -25,7 +30,9 @@ header{
 .logo{
   width: 180px;
   padding: 5px 0;
+  user-select: none;
 }
+
 
 
 //Sidebar
@@ -49,8 +56,14 @@ header{
   width: 15rem;
   height: 100%;
   background-color: #e0e0e0;
-  left: -14rem;
+  left: -15rem;
   z-index: 2;
+  transition: 0.4s;
+
+  &.open{
+    left: 0px;
+  }
+
   nav{
     margin-top: 4rem;
   }
@@ -107,8 +120,26 @@ header{
 }
 
 .login-top{
-  background-color: transparent;
-  border: none;
+  ul{
+    display: none;
+    //display: flex;
+    list-style: none;
+  }
+  li{
+    margin-right: 1rem;
+  }
+
+  a{
+    color: #f1f1f1;
+    font-size: 14px;
+  }
+
+  .login{
+    border: 1px solid #fff;
+    &:hover{
+      background-color: #e0e0e0;
+    }
+  }
 }
 
 .site-description{
@@ -166,6 +197,7 @@ header{
 
 }
 
+
 .card-container{
   margin-top: 1rem;
   a{
@@ -187,8 +219,7 @@ header{
     transition: 0.2s;
     &:hover{
       background-color: #f1f1f1;
-      margin-top: 8px;
-
+      transform: scale(1.1);
     }
 
     .logo-card{
@@ -252,6 +283,22 @@ footer{
     margin-left: 1rem;
   }
 
+  .login-top{
+    ul{
+      display: flex;
+    }
+  }
+
+  .side-button{
+    display: none;
+  }
+
+
+  aside{
+    display: none;
+  }
+
+
   footer{
     ul{
       padding: 0;
@@ -266,6 +313,12 @@ footer{
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {  
   
+  //header
+  header{
+    padding: 5px 0px;
+  }
+
+  //homepage
   .top-section{
     h2{
       font-size: 38px;
