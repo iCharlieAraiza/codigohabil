@@ -109,7 +109,7 @@ header {
   font-weight: 500;
   letter-spacing: -1px;
   font-size: 34px;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
   margin: 1.6rem auto;
 }
@@ -149,6 +149,7 @@ header {
 
 .login-top .login:hover {
   background-color: #e0e0e0;
+  color: #464646;
 }
 
 .site-description {
