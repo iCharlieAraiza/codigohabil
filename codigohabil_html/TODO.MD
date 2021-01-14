@@ -1,13 +1,13 @@
-## Current Work
+## Current Work: HTML branch
 
-### General
+General
+- [X] Add a new branch
 - [ ] Build CSS architecture  
 
-
-### Homepage 
+Homepage 
 - [X] Finish homepage 
 - [X] Build Responsive
 - [X]  Add javascript funcionality
 
-## Post
+Post
 - [ ] Buld postpage

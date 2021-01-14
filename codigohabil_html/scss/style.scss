@@ -1,5 +1,7 @@
 @import "./index";
 
+//General styles
+
 a{
   text-decoration: none;
 }
@@ -14,10 +16,13 @@ p,h1,h2,h3,h4{
 }
 
 .btn{
-  padding: 0.5rem;
   border-radius: 5px;
+  padding: 0.5rem;
 }
 
+
+
+//Header page
 
 header{
   display: flex;
@@ -27,22 +32,29 @@ header{
   z-index: 5;
 }
 
+#homepage{
+  header{
+    background-color: $background-color;
+  }
+}
+
 .logo{
-  width: 180px;
   padding: 5px 0;
   user-select: none;
+  width: 180px;
 }
+
+
 
 
 
 //Sidebar
 
 .side-button{
-
-  width: 40px;
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-around;
+  width: 40px;
 
   svg{
     color: #f3f3f3;
@@ -51,14 +63,14 @@ header{
 }
 
 .sidebar{
-  top: 0;
-  position: fixed;
-  width: 15rem;
-  height: 100%;
   background-color: #e0e0e0;
+  height: 100%;
   left: -15rem;
-  z-index: 2;
+  position: fixed;
+  top: 0;
   transition: 0.4s;
+  width: 15rem;
+  z-index: 2;
 
   &.open{
     left: 0px;
@@ -72,12 +84,13 @@ header{
     position: fixed;
   }
   li{
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
   a{
-    text-decoration: none;
     color: #454545;
+    text-decoration: none;
     &.active{
+      border-bottom: 3px solid rgb(177, 177, 177);
       font-weight: bold;
     }
   }
@@ -102,7 +115,7 @@ header{
     font-weight: 500;
     letter-spacing: -1px;
     font-size: 34px;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
     margin: 1.6rem auto;
   }
@@ -138,6 +151,7 @@ header{
     border: 1px solid #fff;
     &:hover{
       background-color: #e0e0e0;
+      color: rgb(70, 70, 70);
     }
   }
 }
@@ -153,34 +167,29 @@ header{
 }
 
 
-#homepage{
-  header{
-    background-color: $background-color;
-  }
-}
-
+//Search container
 
 
 .hompage-main{
   h2{
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-    font-size: 26px;
     color: $h-base-color;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
     margin-bottom: 2rem;
+    width: 100%;
   }
 }
 
 .search-courses{
-  max-width: 550px;
-  width: 100%;
-  display: flex;
-  padding: 10px;
   border: 1px solid rgb(230, 230, 230);
   border-radius: 5px;
   box-shadow: 5px 7px 20px 0px rgba(163,163,163,1);
+  display: flex;
+  padding: 10px;
   margin: 0 2rem;
+  max-width: 550px;
+  width: 100%;
 
   input, button{
     background-color: transparent;
@@ -197,6 +206,15 @@ header{
 
 }
 
+#search-btn img{
+  width: 1.2em;
+  margin-right: 0.4em;
+}
+
+
+
+
+//Card container
 
 .card-container{
   margin-top: 1rem;
@@ -204,6 +222,7 @@ header{
     display: flex;
     height: 100%;
     width: 100%;
+
     padding: 2rem 0;
     flex-direction: column;
     justify-content: space-around;
@@ -217,14 +236,16 @@ header{
     border-radius: 5px;
     box-shadow: 1px 7px 17px -2px rgba(163,163,163,1);
     transition: 0.2s;
+
     &:hover{
       background-color: #f1f1f1;
       transform: scale(1.1);
     }
 
     .logo-card{
-      margin-top: 1rem;
       height: 55px;
+      margin-top: 1rem;
+      
       display: flex;
       justify-content: center;
       img{
@@ -240,16 +261,18 @@ header{
   }
 }
 
+// Footer component
+
 footer{
   margin-top: 2rem;
   ul{
     list-style: none;
     width: 100%;
     padding: 0;
-    padding-left: 2rem;
     margin: 0;
     li{
-      margin: 1rem 1rem;
+      margin: 1rem;
+      text-align: center;
       a{
         text-align: center;
         font-weight: 500;
@@ -279,6 +302,8 @@ footer{
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) { 
 
+  //Header
+  
   .logo-link{
     margin-right: auto;
     margin-left: 1rem;
@@ -290,6 +315,9 @@ footer{
     }
   }
 
+
+  //Sidepanel
+
   .side-button{
     display: none;
   }
@@ -299,6 +327,8 @@ footer{
     display: none;
   }
 
+  
+  //Footer component
 
   footer{
     ul{
