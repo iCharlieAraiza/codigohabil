@@ -16,6 +16,7 @@ p, h1, h2, h3, h4 {
 }
 
 header {
+  background-color: #7D9091;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,10 +26,6 @@ header {
   position: fixed;
   width: 100%;
   z-index: 5;
-}
-
-#homepage header {
-  background-color: #7D9091;
 }
 
 .logo {

@@ -25,17 +25,12 @@ p,h1,h2,h3,h4{
 //Header page
 
 header{
+  background-color: $background-color;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   z-index: 5;
-}
-
-#homepage{
-  header{
-    background-color: $background-color;
-  }
 }
 
 .logo{
@@ -303,7 +298,7 @@ footer{
 @media (min-width: 768px) { 
 
   //Header
-  
+
   .logo-link{
     margin-right: auto;
     margin-left: 1rem;
