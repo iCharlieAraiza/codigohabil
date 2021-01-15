@@ -118,8 +118,7 @@ header {
 
 .top-section p {
   font-size: 20px;
-  margin: 5px 1rem;
-  margin: 10px;
+  margin: 1px 1rem;
 }
 
 .logo-link {
@@ -163,6 +162,10 @@ header {
 
 .site-description h2, .site-description p {
   color: #F2F2F2;
+}
+
+.txt-type {
+  color: #edb63c;
 }
 
 .hompage-main h2 {
