@@ -146,9 +146,11 @@ header {
 
 .login-top .login {
   border: 1px solid #fff;
+  border-radius: 18px;
+  padding: 0.5em 0.8em;
 }
 
-.login-top .login:hover {
+.login-top:hover {
   background-color: #e0e0e0;
   color: #464646;
 }
