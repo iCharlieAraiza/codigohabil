@@ -2,7 +2,8 @@
 
 General
 - [X] Add a new branch
-- [ ] Build CSS architecture  
+- [ ] Build CSS architecture
+- [ ] Add dark-mode
 
 Homepage 
 - [X] Finish homepage 
