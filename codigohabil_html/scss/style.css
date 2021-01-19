@@ -42,12 +42,25 @@ header {
   width: 180px;
 }
 
+.menu-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .menu-header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu-header ul li {
@@ -56,6 +69,16 @@ header {
 
 .menu-header ul a {
   color: #f1f1f1;
+}
+
+.search-header {
+  padding: 2px 9px;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.search-header input {
+  border: none;
 }
 
 .toggle {
