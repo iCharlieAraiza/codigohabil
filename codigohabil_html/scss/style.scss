@@ -24,6 +24,15 @@ p,h1,h2,h3,h4{
   }
 }
 
+.page-template{
+  main{
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+  }
+
+}
+
 
 
 //Header page
@@ -44,7 +53,7 @@ header{
 }
 
 .menu-header{
-  display: flex;
+  display: none;
   align-items: center;
   ul{
     display: flex;
@@ -64,11 +73,20 @@ header{
 
 
 .search-header{
-  padding: 2px 9px;
+  padding: 4px 9px;
   background-color: #fff;
   border-radius: 11px;
+  border: #a7a7a7 solid 1px;
+  width: 12rem;
+  display: flex;
+  align-items: center;
   input{
+    width: 100%;
     border: none;
+    margin-left: 4px;
+    &:focus {
+      outline: 0;
+    }
   }
 }
 
@@ -206,7 +224,10 @@ header{
 }
 
 .login-top{
+  display: flex;
+  align-items: center;
   ul{
+    margin: 0;
     display: none;
     //display: flex;
     list-style: none;
@@ -408,6 +429,10 @@ footer{
     }
   }
 
+
+  .menu-header{
+    display: flex;
+  }
 
   //Sidepanel
 
