@@ -4,6 +4,7 @@
 
 a{
   text-decoration: none;
+  color: $font-color;
 }
 
 
@@ -24,6 +25,9 @@ p,h1,h2,h3,h4{
   }
 }
 
+
+//Page template
+
 .page-template{
   main{
     position: absolute;
@@ -33,13 +37,42 @@ p,h1,h2,h3,h4{
   
 }
 
+// Post page
+
 .post{
   .side-content{
     position: fixed;
-    width: 280px;
+    width: 300px;
     height: 100vh;
     background-color: #ffffff;
     border-right: 1px solid rgb(184, 184, 184);
+
+    h3{
+      padding: 0 1rem;
+      font-size: 18px;
+    }
+
+    ul{
+      list-style: none;
+      padding-left: 2rem;
+      padding-right: 1rem;
+    }
+
+    li{
+      margin-bottom: 1rem;
+      a{
+        padding: 2px 0;
+        margin-bottom: 10px;
+        font-size: 16px;
+        transition: 0.5s;
+        &:hover{
+          border-bottom: dotted 2px gray;
+          color: $link-post-color;
+        }
+      }
+    }
+
+
   }
 }
 
@@ -200,8 +233,20 @@ header{
     color: #454545;
     text-decoration: none;
   }
-
 }
+
+.menu-mobile{
+  li{
+    &:first-child{
+      a{
+        font-weight: 500;
+      }
+    }
+  }
+  margin-bottom: 2rem;
+}
+
+
 
 .top-section{
 
@@ -456,6 +501,10 @@ footer{
 
 
   aside{
+    display: none;
+  }
+
+  .menu-mobile{
     display: none;
   }
 
